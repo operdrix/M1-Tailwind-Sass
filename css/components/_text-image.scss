@@ -19,7 +19,7 @@
 
 
   img {
-    @extend .img-square;
+    @extend .img-square, .shadow-sm;
     width: 150px;
     margin: 0 40px;
   }

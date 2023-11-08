@@ -92,8 +92,13 @@ hr {
   margin: 0 auto;
 }
 
-.shadow, #about, .card, #recipe ul li {
+.shadow, #about, .card, #recipe ul li,
+.shadow-lg {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-sm, .text-image img {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .radius-8px, #about, .card, #recipe ul li {

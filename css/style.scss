@@ -41,8 +41,13 @@ hr {
   margin: 0 auto;
 }
 
-.shadow {
+.shadow,
+.shadow-lg {
   box-shadow: 0 5px 20px rgba(black, 20%);
+}
+
+.shadow-sm {
+  box-shadow: 0 3px 7px rgba(black, 20%);
 }
 
 .radius-8px {
