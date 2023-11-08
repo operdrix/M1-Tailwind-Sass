@@ -1,0 +1,12 @@
+/*************************************/
+/*               ICONS               */
+/*************************************/
+$sizes: 16px, 24px, 32px, 48px, 64px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}

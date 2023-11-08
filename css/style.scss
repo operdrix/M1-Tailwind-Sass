@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/*************************************/
+/*             VARIABLES             */
+/*************************************/
+$main-color: rgb(65, 152, 173);
+$second-color: rgb(228, 66, 220);
+$grey: #eeeeee;
+$red: rgb(211, 63, 71);
+
+$base-size-text: 13px;
+
+/*************************************/
+/*              GLOBAL               */
+/*************************************/
+
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: $base-size-text;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+code {
+  background: $grey;
+  border-radius: 5px;
+  color: $red;
+  padding: 2px 4px;
+}
+
+/*************************************/
+/*              GENERAL              */
+/*************************************/
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*************************************/
+/*              FLEXBOX              */
+/*************************************/
+
+.d-flex {
+  display: flex;
+  &.align-items-center {
+    align-items: center;
+  }
+  &.align-items-end {
+    align-items: flex-end;
+  }
+  &.justify-content-center {
+    justify-content: center;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+  &.justify-space-around {
+    justify-content: space-around;
+  }
+}
+
+/*************************************/
+/*              IMPORTS              */
+/*************************************/
+@import "_icons", "_titres", "_composants";
+
+/*************************************/
+/*               MIXINS              */
+/*************************************/
+
+@mixin bg-w-overlay($img, $color1, $color2, $to: right) {
+  background-image: linear-gradient(to $to, $color1, $color2), url($img);
+  background-size: cover;
+}
+
+/*************************************/
+/*               PAGE                */
+/*************************************/
+
+header {
+  @include bg-w-overlay(
+    "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9",
+    rgba($second-color, 0.4),
+    rgba($main-color, 0.4),
+    top right
+  );
+  padding: 100px 0;
+  h1 {
+    text-transform: uppercase;
+    color: white;
+    @extend .text-center;
+  }
+}
+
+.container > :nth-child(2) {
+  border: 1px solid $grey;
+  padding: 50px;
+  border-radius: 10px;
+  &.py-0 {
+    padding: 0 50px;
+  }
+  &.pt-0 {
+    padding-top: 0;
+  }
+}
+
+#titres {
+  span {
+    @extend body;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+}
+
+#composants {
+  li {
+    margin-bottom: 20px;
+  }
+}

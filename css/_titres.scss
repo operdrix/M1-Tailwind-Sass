@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+/*************************************/
+/*               TITRES              */
+/*************************************/
+
+@for $n from 1 through 6 {
+  h#{$n} {
+    font-size: round($base-size-text * (0.3 * (10 - $n)));
+    font-family: Jost, Arial, Helvetica, sans-serif;
+  }
+}

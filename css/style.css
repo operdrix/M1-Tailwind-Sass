@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*************************************/
+/*             VARIABLES             */
+/*************************************/
+/*************************************/
+/*              GLOBAL               */
+/*************************************/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+body, #titres span {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+code {
+  background: #eeeeee;
+  border-radius: 5px;
+  color: #d33f47;
+  padding: 2px 4px;
+}
+
+/*************************************/
+/*              GENERAL              */
+/*************************************/
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.text-center, header h1 {
+  text-align: center;
+}
+
+/*************************************/
+/*              FLEXBOX              */
+/*************************************/
+.d-flex {
+  display: flex;
+}
+
+.d-flex.align-items-center {
+  align-items: center;
+}
+
+.d-flex.align-items-end {
+  align-items: flex-end;
+}
+
+.d-flex.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex.justify-space-between {
+  justify-content: space-between;
+}
+
+.d-flex.justify-space-around {
+  justify-content: space-around;
+}
+
+/*************************************/
+/*              IMPORTS              */
+/*************************************/
+/*************************************/
+/*               ICONS               */
+/*************************************/
+.icon-16px {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-24px {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.icon-32px {
+  font-size: 32px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-48px {
+  font-size: 48px;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-64px {
+  font-size: 64px;
+  height: 64px;
+  width: 64px;
+}
+
+/*************************************/
+/*               TITRES              */
+/*************************************/
+h1 {
+  font-size: 35px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 31px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 27px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  font-size: 23px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+h6 {
+  font-size: 16px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+}
+
+/*************************************/
+/*               INPUTS              */
+/*************************************/
+input[type="text"] {
+  outline: none;
+  border: 1px solid #eeeeee;
+  color: #4198ad;
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  width: 300px;
+  max-width: 100%;
+}
+
+input[type="text"]::placeholder {
+  color: #bbbbbb;
+}
+
+input[type="text"]:focus, input[type="text"].focus {
+  border: 2px solid #4198ad;
+}
+
+input[type="text"]:focus::placeholder, input[type="text"].focus::placeholder {
+  color: #4198ad;
+}
+
+input[type="text"]:disabled, input[type="text"].disabled {
+  border: none;
+  background: #eeeeee;
+}
+
+input[type="text"]:disabled::placeholder, input[type="text"].disabled::placeholder {
+  color: #83c2d1;
+}
+
+/*************************************/
+/*               MIXINS              */
+/*************************************/
+/*************************************/
+/*               PAGE                */
+/*************************************/
+header {
+  background-image: linear-gradient(to top right, rgba(228, 66, 220, 0.4), rgba(65, 152, 173, 0.4)), url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9");
+  background-size: cover;
+  padding: 100px 0;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.container > :nth-child(2) {
+  border: 1px solid #eeeeee;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.container > :nth-child(2).py-0 {
+  padding: 0 50px;
+}
+
+.container > :nth-child(2).pt-0 {
+  padding-top: 0;
+}
+
+#titres span {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+#composants li {
+  margin-bottom: 20px;
+}
