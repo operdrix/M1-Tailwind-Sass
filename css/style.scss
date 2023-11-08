@@ -5,14 +5,23 @@ $wMax-mobile: 767px;
 
 //Imports
 @import "components";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Lato&family=Roboto:wght@400;700;900&display=swap');
 
 /* CSS GENERAL */
 * {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -62,6 +71,10 @@ hr {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.icon-white {
+  filter: brightness(0) invert(1);
 }
 
 /* STYLE PAR SECTION */

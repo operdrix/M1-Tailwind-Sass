@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Lato&family=Roboto:wght@400;700;900&display=swap");
 .card, #recipe ul li {
   padding: 20px;
   border-top: 3px solid #60d390;
@@ -10,7 +11,6 @@
   background-color: #60d390;
   color: white;
 }
-
 .btn {
   background-color: #60d390;
   color: white;
@@ -63,8 +63,16 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -113,6 +121,10 @@ hr {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.icon-white, .card:hover img, #recipe ul li:hover img {
+  filter: brightness(0) invert(1);
 }
 
 /* STYLE PAR SECTION */

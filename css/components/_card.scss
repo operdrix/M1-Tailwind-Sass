@@ -10,5 +10,9 @@
     transform: translateY(-10px);
     background-color: $green-light;
     color: white;
+
+    img {
+      @extend .icon-white;
+    }
   }
 }
