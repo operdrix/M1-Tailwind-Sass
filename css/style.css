@@ -74,8 +74,14 @@ ul {
   padding: 0;
 }
 
+hr {
+  border: 1px #60d390 solid;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
 /* CLASSES GLOBALES */
-.container {
+.container, hr {
   width: 80%;
   max-width: 1440px;
   margin: 0 auto;
