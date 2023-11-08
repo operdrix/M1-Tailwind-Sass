@@ -1,0 +1,88 @@
+/* CSS GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CLASSES GLOBALES */
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.shadow, #about {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.radius-8px, #about {
+  border-radius: 8px;
+}
+
+.img-square, #about img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: #60d390;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #237e49;
+}
+
+/* STYLE PAR SECTION */
+header {
+  background: linear-gradient(to bottom right, #60d390, #237e49);
+  color: white;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav img {
+  width: 50px;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+header .titles {
+  text-align: center;
+  margin: 150px 0 200px;
+}
+
+/* main */
+#about {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  margin-top: -100px;
+  background-color: white;
+}
+#about img {
+  width: 200px;
+}
+#about .btn {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

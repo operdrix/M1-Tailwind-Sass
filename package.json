@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-sass",
+  "version": "1.0.0",
+  "description": "Naviger entre les branches pour consulter les projets",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch css/style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,98 @@
+$green-light: #60d390;
+$green-dark: #237e49;
+
+/* CSS GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CLASSES GLOBALES */
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.shadow {
+  box-shadow: 0 5px 20px rgba(black, 20%);
+}
+
+.radius-8px {
+  border-radius: 8px;
+}
+
+.img-square {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: $green-light;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(black, 20%);
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+}
+
+/* STYLE PAR SECTION */
+header {
+  background: linear-gradient(to bottom right, $green-light, $green-dark);
+  color: white;
+  padding: 20px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 50px;
+    }
+
+    ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+  }
+
+  .titles {
+    text-align: center;
+    margin: 150px 0 200px;
+  }
+}
+
+/* main */
+#about {
+  @extend .shadow, .radius-8px;
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  margin-top: -100px;
+  background-color: white;
+
+  img {
+    @extend .img-square;
+    width: 200px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
