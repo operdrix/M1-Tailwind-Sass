@@ -1,0 +1,30 @@
+.text-image {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+
+  @media (max-width: $wMax-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    @extend .img-square;
+    width: 150px;
+    margin: 0 40px;
+  }
+
+  .text {
+    text-align: left;
+    width: 70%;
+
+    @media (max-width: $wMax-mobile) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &-right {
+    flex-direction: row-reverse;
+  }
+}

@@ -24,6 +24,35 @@
   background-color: #237e49;
 }
 
+.text-image {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .text-image {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.text-image img {
+  width: 150px;
+  margin: 0 40px;
+}
+.text-image .text {
+  text-align: left;
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .text-image .text {
+    text-align: center;
+    width: 100%;
+  }
+}
+.text-image-right {
+  flex-direction: row-reverse;
+}
+
 /* CSS GENERAL */
 * {
   box-sizing: border-box;
@@ -60,7 +89,7 @@ ul {
   border-radius: 8px;
 }
 
-.img-square, #about img {
+.img-square, #about img, .text-image img {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
@@ -112,6 +141,11 @@ header .titles {
 }
 #about .btn {
   margin-top: 10px;
+}
+
+#concept {
+  text-align: center;
+  margin-top: 50px;
 }
 
 #recipe {
