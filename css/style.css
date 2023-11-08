@@ -35,6 +35,14 @@
     align-items: center;
   }
 }
+.text-image-right {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .text-image-right {
+    flex-direction: column;
+  }
+}
 .text-image img {
   width: 150px;
   margin: 0 40px;
@@ -48,9 +56,6 @@
     text-align: center;
     width: 100%;
   }
-}
-.text-image-right {
-  flex-direction: row-reverse;
 }
 
 /* CSS GENERAL */

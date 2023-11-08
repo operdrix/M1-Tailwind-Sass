@@ -8,6 +8,16 @@
     align-items: center;
   }
 
+  &-right {
+    flex-direction: row-reverse;
+
+    @media (max-width: $wMax-mobile) {
+      flex-direction: column;
+    }
+  }
+
+
+
   img {
     @extend .img-square;
     width: 150px;
@@ -24,7 +34,4 @@
     }
   }
 
-  &-right {
-    flex-direction: row-reverse;
-  }
 }
