@@ -1,0 +1,14 @@
+.card {
+  @extend .shadow, .radius-8px;
+  padding: 20px;
+  border-top: 3px solid $green-light;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+
+  &:hover {
+    transform: translateY(-10px);
+    background-color: $green-light;
+    color: white;
+  }
+}

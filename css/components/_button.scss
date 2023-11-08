@@ -1,0 +1,13 @@
+.btn {
+  background-color: $green-light;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(black, 20%);
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+}
