@@ -115,6 +115,38 @@ header {
   margin-top: 50px;
 }
 
+footer {
+  display: flex;
+  padding: 20px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $wMax-mobile) {
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: $wMax-mobile) {
+      align-items: center;
+    }
+  }
+
+  .social {
+    display: flex;
+    gap: 15px;
+
+    i {
+      color: $green-light;
+      font-size: 40px;
+    }
+  }
+
+}
+
 #recipe {
   text-align: center;
   margin-top: 50px;

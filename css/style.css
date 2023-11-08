@@ -159,6 +159,36 @@ header .titles {
   margin-top: 50px;
 }
 
+footer {
+  display: flex;
+  padding: 20px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  footer .links {
+    align-items: center;
+  }
+}
+footer .social {
+  display: flex;
+  gap: 15px;
+}
+footer .social i {
+  color: #60d390;
+  font-size: 40px;
+}
+
 #recipe {
   text-align: center;
   margin-top: 50px;
