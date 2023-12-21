@@ -1,0 +1,35 @@
+{
+  "name": "tolkien-books",
+  "version": "1.0.0",
+  "description": "TP sur Tailwind et Sass",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-nesting": "^11.2.2",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-scss": "^4.0.6",
+    "tailwindcss": "^3.4.0",
+    "sass": "^1.69.5"
+  },
+  "scripts": {
+    "sass": "sass --watch src/styles/style.scss ./dist/styles/style.css",
+    "tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./dist/styles/output.css --watch",
+    "sass:watch": "postcss ./src/styles/style.scss -o dist/styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operdrix/M1-Tailwind-Sass.git"
+  },
+  "author": "Olivier Perdrix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/operdrix/M1-Tailwind-Sass/issues"
+  },
+  "homepage": "https://github.com/operdrix/M1-Tailwind-Sass#readme"
+}

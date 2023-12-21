@@ -1,0 +1,13 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom */
+body {
+  background-color: theme("colors.orange.200");
+}
+
+.container {
+  background-color: red;
+}
