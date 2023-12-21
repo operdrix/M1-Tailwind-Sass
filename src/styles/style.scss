@@ -1,18 +1,17 @@
+/* fonts */
 @font-face {
   // This is parsed as a normal function call that takes a quoted string.
   src: url("/dist/fonts/Anironc.ttf") format("trueType");
   font-family: "Anironc";
   font-weight: 400;
 }
-/* tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 /* custom */
+* {
+  box-sizing: border-box;
+}
 body {
-  
   header {
     background-image: url("/dist/img/background.jpg");
     background-size: cover;
@@ -21,4 +20,23 @@ body {
     height: 70vh;
     min-height: 500px;
   }
+  main {
+    h2 {
+      strong {
+        @apply font-tolkien;
+      }
+    }
+
+    .book-card {
+      @apply w-full p-4 shadow-lg rounded-lg shadow-green-200;
+      @apply h-44;
+      @apply flex justify-center items-center text-center;
+      @apply font-tolkien;
+    }
+
+  }
 }
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
