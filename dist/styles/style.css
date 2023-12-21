@@ -1,5 +1,11 @@
+@font-face {
+  /* This is parsed as a normal function call that takes a quoted string.*/
+  src: url("/dist/fonts/Anironc.ttf") format("trueType");
+  font-family: "Anironc";
+  font-weight: 400;
+}
 /* tailwind */
-/* ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -492,24 +498,98 @@ video {
     max-width: 1536px;
   }
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.m-auto {
+  margin: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-44 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-tolkien {
+  font-family: Anironc;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
 }
 
 /* custom */
-body {
-  background-color: #fed7aa;
-}
-
-.container {
-  background-color: red;
+body header {
+  background-image: url("/dist/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  min-height: 500px;
 }

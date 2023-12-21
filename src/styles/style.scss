@@ -1,13 +1,24 @@
+@font-face {
+  // This is parsed as a normal function call that takes a quoted string.
+  src: url("/dist/fonts/Anironc.ttf") format("trueType");
+  font-family: "Anironc";
+  font-weight: 400;
+}
 /* tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 /* custom */
 body {
-  background-color: theme("colors.orange.200");
-}
-
-.container {
-  background-color: red;
+  
+  header {
+    background-image: url("/dist/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    min-height: 500px;
+  }
 }
