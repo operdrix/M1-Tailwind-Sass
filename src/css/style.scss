@@ -1,0 +1,56 @@
+@import url("_fonts.scss");
+/* tailwind */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* imports */
+@import url("components/index.scss");
+/**********************
+* MIXINS
+***********************/
+@mixin bgImgwOverlay($img, $from, $to: $from, $dir: to right) {
+	background-image: linear-gradient($dir, $from, $to), url($img);
+	background-size: cover;
+	background-position: center;
+}
+
+/**********************
+* CUSTOM @layer
+***********************/
+/*utilities*/
+@layer utilities {
+	.tolkien {
+		@apply font-tolkien;
+		font-size: 1.5em;
+	}
+}
+
+@layer base {
+	// On ne peut pas utiliser de boucle @for combinée à un @apply des classes car SASS se compile avant Tailwind, et donc les classes n'existent pas encore = ERREUR
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-xl;
+	}
+}
+
+@layer components {
+	.p-container {
+		@apply container px-4  mx-auto;
+	}
+	.logo {
+		max-width: 80px;
+		max-height: 80px;
+	}
+}
+/**********************
+* CUSTOM 
+***********************/
+html {
+	scroll-behavior: smooth;
+}

@@ -1,0 +1,6 @@
+@layer components {
+	.hero-header {
+		background: center / cover url("../img/background.jpg");
+		@apply bg-fixed text-white h-[75vh] grid;
+	}
+}

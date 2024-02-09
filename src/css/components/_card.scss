@@ -1,0 +1,34 @@
+//En définissant des classes de composants dans la couche des composants, vous pouvez toujours utiliser des classes utilitaires pour les remplacer lorsque cela est nécessaire. https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
+
+@layer components {
+	//Cela ne sera pas inclus dans votre CSS compilé à moins que vous ne l'utilisiez réellement.
+
+	.card {
+		@apply bg-white shadow-lg hover:shadow-2xl shadow-emerald-100 hover:shadow-emerald-200 p-10 rounded-xl font-tolkien text-center flex items-center justify-center dark:bg-zinc-950 dark:text-white dark:shadow-emerald-800;
+		&.card-horizontal {
+			@apply md:text-left hover:shadow-2xl shadow-cyan-100 hover:shadow-cyan-200 dark:shadow-cyan-800;
+			> a {
+				@apply flex flex-col-reverse md:flex-row gap-4 items-center;
+			}
+			*:not(:last-child) {
+				@apply mb-5;
+			}
+			.year {
+				@apply inline-block;
+			}
+			p,
+			span,
+			small {
+				@apply font-sans;
+			}
+			.tag {
+				@apply bg-cyan-400 px-3 py-1 rounded-full uppercase;
+			}
+			img {
+				aspect-ratio: 3/5;
+				@apply rounded-lg object-cover w-[50%] md:w-[150px] mx-auto;
+			}
+		}
+	}
+}
+// ici, on crée notre propre composant, qui se base sur les classes de tailwind avec la possibilité d'ajouter notre propre style. Cela nous évite d'avoir des balises avec des classes à rallonge dans le HTML

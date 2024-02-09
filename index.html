@@ -1,73 +1,273 @@
-<!DOCTYPE html>
-<html lang="fr-FR">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Tolkien's Books</title>
-  <script src="https://kit.fontawesome.com/717fb89f72.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/dist/styles/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="dist/css/style.css" rel="stylesheet">
+	<script src="dist/js/main.js" defer></script>
 </head>
 
-<body>
+<body class="dark:bg-zinc-950 dark:text-white">
+	<header class="hero-header">
+		<nav class="navbar">
+			<a href="index.html"><img src="dist/img/logo.jpg" alt="logo" class="logo"></a>
+			<ul>
+				<li><a href="#list">Oeuvres</a></li>
+				<li><a href="#lecture">Ordre de lectures</a></li>
+				<li><a href="#story">Histoire</a></li>
+				<li><img id="toggle-mode" class="cursor-pointer" src="dist/img/moon.svg" alt="passer en mode sombre"
+						title="passer en mode sombre"></li>
+			</ul>
+		</nav>
+		<h1 class="text-center">Liste de lecture<br><span class="tolkien !text-5xl">Tolkien</span>
+		</h1>
+	</header>
+	<main>
+		<section id="list" class="p-container">
+			<div class="text-center mt-10 mb-5">
+				<h2 class="mb-5">Les livres de <span class="tolkien ">Tolkien</span></h2>
+				<p>Cette liste ne comprend pas tous les écrits posthumes de Tolkien, tels que "Les Enfants de Húrin" et "Bilbo
+					le
+					Hobbit :
+					Histoire d'un aller et retour", qui ont été édités et publiés par Christopher Tolkien, le fils de J.R.R.
+					Tolkien,
+					après
+					sa mort.</p>
+			</div><!-- /.text -->
 
-  <header class="w-auto text-white">
-    <nav class="container m-auto py-5 flex justify-between items-center">
-      <div class="logo">
-        <img class="w-12" src="/dist/img/logo.jpg" alt="logo">
-      </div>
-      <ul class="flex gap-5 h-full">
-        <li><a href="#oeuvres">Oeuvres</a></li>
-        <li><a href="#ordre">Ordre de lecture</a></li>
-        <li><a href="#histoire">Histoire</a></li>
-        <li><img src="/dist/img/moon.svg" alt="moon"></li>
-      </ul>
-    </nav>
+			<ul class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+				<li class="card">
+					<h3>Le Hobbit</h3>
+				</li>
+				<li class="card">
+					<h3>Le Seigneur des Anneaux - La Communauté de l'Anneau</h3>
+				</li>
+				<li class="card">
+					<h3>Le Seigneur des Anneaux - Les Deux Tours</h3>
+				</li>
+				<li class="card">
+					<h3>Le Seigneur des Anneaux - Le Retour du Roi</h3>
+				</li>
+				<li class="card">
+					<h3>Le Silmarillion</h3>
+				</li>
+				<li class="card">
+					<h3>Contes et légendes inachevés</h3>
+				</li>
+				<li class="card">
+					<h3>Les Enfants de Húrin</h3>
+				</li>
+				<li class="card">
+					<h3>Bilbo le Hobbit : Histoire d'un aller et retour</h3>
+				</li>
+			</ul>
+		</section> <!-- /#list -->
 
-    <div class="flex flex-col items-center m-auto py-44">
-      <h1 class="text-center text-2xl px-4">Liste de lecture</h1>
-      <p class="font-tolkien uppercase font-bold text-4xl mb-8">Tolkien</p>
-    </div>
+		<section id="lecture" class="mt-10 py-6 bg-slate-100 dark:bg-transparent">
+			<div class="p-container">
+				<div class="text-center mt-10 mb-5">
+					<h2 class="mb-5"><span class="tolkien ">Ordre</span> de lecture recommandé</h2>
+					<p>Voici la liste des romans de l'univers Tolkien (y compris ceux sortis à titre posthumes) selon l'ordre de
+						lecture recommandé.</p>
+				</div><!-- /.text -->
 
-  </header>
+				<ol class="grid lg:grid-cols-2 gap-6">
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1937</span>
+								<h3>Le Hobbit</h3>
+								<p>Bilbo Baggins, un hobbit paisible, se retrouve embarqué dans une aventure extraordinaire lorsqu'il
+									est
+									recruté par un
+									groupe de nains pour récupérer un trésor gardé par le dragon Smaug.</p>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/hobbit.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1954</span>
+								<h3>La Communaute de l'Anneau</h3>
+								<p>Frodo Baggins, un hobbit, se voit confier la tâche de détruire l'Anneau unique, une arme puissante
+									convoitée par le
+									Seigneur des Ténèbres Sauron, en formant une communauté de compagnons pour l'accompagner.</p>
+								<small class="tag">Le Seigneur des Anneaux</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/lotr1.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1954</span>
+								<h3>Les Deux Tours</h3>
+								<p>La communauté se divise, et Frodo poursuit sa quête pour détruire l'Anneau, tandis que ses compagnons
+									affrontent de
+									nombreux dangers dans leur lutte contre les forces de Sauron.</p>
+								<small class="tag">Le Seigneur des Anneaux</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/lotr2.png" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1955</span>
+								<h3>Le Retour du Roi</h3>
+								<p>La quête de Frodo atteint son point culminant alors qu'il se rapproche du Mont du Destin pour
+									détruire
+									l'Anneau, tandis
+									que la guerre entre les forces de la Terre du Milieu et Sauron atteint son apogée.</p>
+								<small class="tag">Le Seigneur des Anneaux</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/lotr3.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1977</span>
+								<h3>Le Silmarillion</h3>
+								<p>Un recueil d'histoires et de légendes qui raconte la création du monde, Arda, et les événements
+									majeurs
+									qui ont façonné
+									son histoire, y compris les conflits entre les elfes et les forces du mal.</p>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/silmarillion.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1980</span>
+								<h3>Contes et legendes inacheves</h3>
+								<p>Une collection d'histoires inachevées et de fragments qui complètent les récits du Silmarillion et du
+									Seigneur des
+									Anneaux, fournissant plus de détails sur les personnages, les lieux et les événements de la Terre du
+									Milieu.</p>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/contesinacheves.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">2007</span>
+								<h3>Les Enfants de Hurin</h3>
+								<p>Une histoire tragique se déroulant dans le Premier Âge de la Terre du Milieu, centrée sur le destin
+									de
+									Túrin Turambar,
+									un homme maudit confronté à des épreuves et des tragédies.</p>
+								<p><em>Cette histoire est d'ailleurs assez "gore", très dark !</em></p>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/hurin.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1983</span>
+								<h3>La Formation de la Terre du Milieu</h3>
+								<p>Le premier volume de la série "The History of Middle-earth", édité par Christopher Tolkien, qui
+									explore
+									les premiers
+									développements et les premières versions des récits de la Terre du Milieu.</p>
+								<small class="tag">The History of Middle-earth</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/formation.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1987</span>
+								<h3>Les Aventures de Tom Bombadil</h3>
+								<p>Une collection de poèmes et de récits en vers mettant en scène le personnage de Tom Bombadil, apparu
+									brièvement dans Le
+									Seigneur des Anneaux.</p>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/bombadil.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1987</span>
+								<h3>La Route perdue et autres textes</h3>
+								<p>Le cinquième volume de la série "The History of Middle-earth", qui présente des textes et des
+									fragments
+									inachevés liés
+									aux récits du Silmarillion et du Seigneur des Anneaux.</p>
+								<small class="tag">The History of Middle-earth</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/routeperdue.jpg" alt="couverture">
+						</a>
+					</li>
+					<li class="card card-horizontal my-5">
+						<a href="">
+							<div class="content">
+								<span class="year">1983</span>
+								<h3>Les contes perdus</h3>
+								<p>Le deuxième volume de la série "The History of Middle-earth", contenant des histoires et des versions
+									alternatives des
+									récits du Silmarillion.</p>
+								<small class="tag">The History of Middle-earth</small>
+							</div> <!-- /.content -->
+							<img src="dist/img/covers/contesperdus.jpg" alt="couverture">
+						</a>
+					</li>
+				</ol>
+			</div> <!-- /.p-container -->
+		</section> <!-- /#lecture -->
 
-  <main class="m-auto container mt-5 px-4">
-    <section class="books">
-      <article class="text-center">
-        <h2 class="text-2xl">Les livres de <strong>Tolkien</strong></h2>
-        <p class="mt-4">Cette liste ne comprend pas tous les écrits posthumes de Tolkien, tels que "Les Enfants de
-          Húrin" et "Bilbo
-          le Hobbit : Histoire d'un aller et retour", qui ont été édités et publiés par Christopher Tolkien, le fils de
-          J.R.R. Tolkien, après sa mort.</p>
-      </article>
-      <ul class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-4">
-        <li class="book-card">
-          <h3>Le Hobbit</h3>
-        </li>
-        <li class="book-card">
-          <h3>Le Seigneur des Anneaux - La Communauté de l'Anneau</h3>
-        </li>
-        <li class="book-card">
-          <h3>Le Seigneur des Anneaux - Les Deux Tours</h3>
-        </li>
-        <li class="book-card">
-          <h3>Le Seigneur des Anneaux - Le Retour du Roi</h3>
-        </li>
-        <li class="book-card">
-          <h3>Le Silmarillion</h3>
-        </li>
-        <li class="book-card">
-          <h3>Contes et Légendes Inachevés</h3>
-        </li>
-        <li class="book-card">
-          <h3>Les Enfants de Húrin</h3>
-        </li>
-        <li class="book-card">
-          <h3>Bilbo le Hobbit : Histoire d'un aller et retour</h3>
-        </li>
-      </ul>
-    </section>
-  </main>
+		<section class="p-container py-10 flex flex-col-reverse md:flex-row items-center gap-6" id="story">
+			<div class="text">
+				<h2 class="mb-3">L'histoire de ces <span class="tolkien">oeuvres</span></h2>
+				<p class="mb-3">Le processus de publication des œuvres de J.R.R. Tolkien et le rôle de son fils dans la
+					perpétuation de ces
+					œuvres sont
+					étroitement liés. Tout au long de sa carrière, J.R.R. Tolkien a créé un vaste univers avec des récits
+					complexes
+					et des
+					langues élaborées, mais il n'a pas pu terminer toutes ses œuvres avant sa mort en 1973. </p>
+				<p class="mb-3">C'est là que Christopher
+					Tolkien, son fils, a joué un rôle essentiel. En tant qu'éditeur et archiviste méticuleux, Christopher a
+					consacré
+					des
+					années à examiner les notes, les brouillons et les manuscrits de son père, travaillant sans relâche pour
+					donner
+					vie à
+					ces œuvres inachevées. Il a édité et publié des livres tels que "Le Silmarillion", "Les Enfants de Húrin" et
+					"Contes et
+					légendes inachevés", offrant aux lecteurs un aperçu plus approfondi de l'univers de la Terre du Milieu. Grâce
+					à
+					son
+					travail diligent et respectueux de la vision de son père, Christopher Tolkien a permis aux fans de Tolkien de
+					continuer
+					à explorer et à apprécier son héritage littéraire bien au-delà de son décès.</p>
+			</div> <!-- /.text -->
+			<div class="avatar relative w-[250px] md:w-[40%] mb-[100px]">
+				<img src="dist/img/tolkien.jpg" alt="tolkien"
+					class="aspect-square rounded-full max-w-[150px] object-cover outline outline-offset-2 outline-4 outline-purple-800 bg-white ml-[80px]"
+					title="JRR TOLKIEN">
+				<img src="dist/img/christopher.jpeg" alt="tolkien"
+					class="aspect-square rounded-full max-w-[150px] object-cover outline outline-offset-2 outline-4 outline-purple-800 grayscale absolute top-[60%] z-[-1]"
+					title="Christopher TOLKIEN">
+			</div> <!-- /.avatar -->
+		</section> <!-- /#story -->
+	</main>
+
+	<footer class="bg-slate-800 text-white">
+		<div class="p-container py-6 text-center ">
+			<a href="index.html"><img src="dist/img/logo.jpg" alt="logo" class="logo mx-auto"></a>
+			<p class="my-3">Les textes sont générés par ChatGPT. La plupart des images de couvertures proviennent soit de <a
+					target="_blank" class="text-pink-800" href="https://www.tolkiendil.com/">Tolkiendil</a> soit d'Amazon</p>
+			<p>2023 © AH</p>
+		</div>
+	</footer>
+</body>
 
 </html>

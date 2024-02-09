@@ -1,0 +1,9 @@
+@layer components {
+	.navbar {
+		@apply p-container mx-auto flex justify-between items-center py-5 self-start;
+
+		ul {
+			@apply flex gap-5;
+		}
+	}
+}
